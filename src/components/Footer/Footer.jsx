@@ -1,4 +1,5 @@
 import { Author, Container, Logo } from "./Footer.styled";
+
 import LogoIcon from "../../../public/Logo.png"
 
 function Footer() {
