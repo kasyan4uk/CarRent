@@ -12,7 +12,6 @@ function CatalogPage() {
 
     const paginatedCars = cars.slice(0, page * cardsPerPage);
     const getPage = () => setPage(page + 1);
-    console.log('getPage:', getPage);
 
     useEffect(() => {
         getAllCars()
