@@ -1,0 +1,83 @@
+import styled from "styled-components";
+
+export const CarBlock = styled.div`
+    width: 274px;
+    height: 426px;
+`;
+
+export const CarImg = styled.img`
+    object-fit: cover;
+    height: 268px;
+    border-radius: 14px;
+`;
+
+export const MainInfoBlock = styled.div`
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+`
+
+export const CarNameBlock = styled.div`
+    display: flex;
+`
+
+export const CarName = styled.p`
+    padding-right: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #121417;
+    m
+`;
+
+export const CarNameBlue = styled.p`
+    padding-right: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #3470FF;
+`;
+
+export const CarYear = styled.p`
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+`;
+
+export const CarPrice = styled.p`
+    padding-right: 9px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+`;
+
+export const CarInfo = styled.ul`
+    padding-top: 8px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    width: 274px;
+    gap: 6px;
+`;
+
+export const CarInfoItem = styled.li`
+    padding-right: 4px;
+    color: rgba(18, 20, 23, 0.5);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    border-right: 1px solid rgba(18, 20, 23, 0.3);
+    &:last-child {
+    border-right: none;
+  }
+`;
+
+export const CarButton = styled.button`
+    margin-top: 28px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    background-color: #3470FF;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+`
