@@ -1,7 +1,7 @@
 import CarList from "../../components/CarList/CarList";
 import Footer from "../../components/Footer/Footer";
 
-function CatalogPage() {
+const CatalogPage = () => {
     return (
       <>
         <CarList/>

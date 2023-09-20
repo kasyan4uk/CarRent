@@ -1,6 +1,6 @@
 import Favorite from "../../components/Favorite/Favorite";
 
-function FavouritesPage() {
+const FavouritesPage = () => {
     return (
         <Favorite/>
     )
