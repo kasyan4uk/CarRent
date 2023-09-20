@@ -26,7 +26,6 @@ export const CarName = styled.p`
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     color: #121417;
-    m
 `;
 
 export const CarNameBlue = styled.p`
@@ -50,7 +49,6 @@ export const CarPrice = styled.p`
 export const CarInfo = styled.ul`
     padding-top: 8px;
     display: flex;
-    
     flex-wrap: wrap;
     align-items: center;
     width: 274px;
@@ -60,8 +58,8 @@ export const CarInfo = styled.ul`
 export const CarInfoItem = styled.li`
     padding-right: 4px;
     color: rgba(18, 20, 23, 0.5);
-    font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    font-size: 12px;
     line-height: 18px;
     border-right: 1px solid rgba(18, 20, 23, 0.3);
     &:last-child {
@@ -80,4 +78,7 @@ export const CarButton = styled.button`
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    &:hover {
+        background: #0B44CD;
+    }
 `
