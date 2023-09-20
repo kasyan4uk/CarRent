@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CarDetails from "../CarDetails/CarDetails";
 import Modal from "../Modal/Modal";
+import { useDispatch, useSelector } from "react-redux";
+import { cutFavorite, pushFavorite } from "../../store/reducer";
 import { 
     CarBlock,
     CarImg, 
@@ -11,11 +13,29 @@ import {
     CarNameBlock, 
     CarInfo, 
     CarInfoItem,
-    CarButton
+    CarButton,
+    FavoriteButton,
+    DisableFavoriteButton,
+    ActiveFavoriteButton
 } from "./CarCard.styled";
 
 
+
+
 function CarCard({ car }) {
+    
+    const dispatch = useDispatch();
+    const favorite = useSelector(state => state.favorite);
+  
+    const isCarInFavorites  = favorite.includes(car.id);
+
+    const addFavorite = () => {
+        dispatch(pushFavorite(car.id));
+    };
+    const delFavorite = () => {
+        dispatch(cutFavorite(car.id));
+    };
+
     const [isShowModal, setIsShowModal] = useState(false);
     const toggleModal = () => {
         setIsShowModal(!isShowModal);
@@ -60,6 +80,9 @@ function CarCard({ car }) {
 
     return(
         <CarBlock>
+            <FavoriteButton onClick={!isCarInFavorites  ? addFavorite : delFavorite} type="button">
+                {!isCarInFavorites  ? <DisableFavoriteButton /> : <ActiveFavoriteButton />}
+            </FavoriteButton>
             <CarImg src={car.img}/>
             <MainInfoBlock>
                 <CarNameBlock>
@@ -84,8 +107,7 @@ function CarCard({ car }) {
                 <CarDetails car={car} city={city} country={country} />
         </Modal>
       )}
-        </CarBlock>
-        
+        </CarBlock>  
     )
 }
 

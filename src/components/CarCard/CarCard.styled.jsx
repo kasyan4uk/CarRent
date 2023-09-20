@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import FavoriteDisable from "../../img/normal.svg";
+import FavoriteActive from "../../img/active.svg";
 
 export const CarBlock = styled.div`
+    position: relative;
     width: 274px;
     height: 426px;
 `;
@@ -81,4 +84,26 @@ export const CarButton = styled.button`
     &:hover {
         background: #0B44CD;
     }
-`
+`;
+
+export const FavoriteButton = styled.button`
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    height: 18px;
+    width: 18px;
+    border: none;
+    background-color: inherit;
+`;
+
+export const DisableFavoriteButton = styled.div`
+  background-image: url(${FavoriteDisable});
+  width: 18px;
+  height: 18px;
+`;
+
+export const ActiveFavoriteButton = styled.div`
+  background-image: url(${FavoriteActive});
+  width: 18px;
+  height: 18px;
+`;

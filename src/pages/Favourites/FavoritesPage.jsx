@@ -1,10 +1,8 @@
+import Favorite from "../../components/Favorite/Favorite";
+
 function FavouritesPage() {
     return (
-        <div>
-            <h1>
-                FavoritesPage
-            </h1>
-        </div>
+        <Favorite/>
     )
 }
 

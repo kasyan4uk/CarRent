@@ -21,21 +21,3 @@ export const ContainerCard = styled.div`
   gap: 29px;
   justify-content: center;
 `;
-
-export const LoadMore = styled.button`
-   border: none;
-   background-color: inherit;
-   font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration-line: underline;
-    cursor: pointer;
-    color: #3470FF;
-    &:hover {
-        color: #0B44CD;
-    }
-
-`;
-
