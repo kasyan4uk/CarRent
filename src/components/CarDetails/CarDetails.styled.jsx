@@ -166,9 +166,9 @@ export const RentalItem = styled.li`
   }
 `;
 
-export const RentButton = styled.button`
+export const RentButton = styled.a`
     display: block;
-    
+    padding: 12px 50px;
     height: 44px;
     width: 168px;
     border: none;
