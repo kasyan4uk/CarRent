@@ -25,7 +25,9 @@ export default function CarDetails({ car, city, country }) {
   const firstConditionLine  = rentalConditionsSplit [0];
   const extractedNumber  = parseInt(firstConditionLine .match(/\d+/)[0], 10);
 
-  const phoneNumber = "+380730000000";
+  const handlePhoneCall = () => {
+    window.location.href = 'tel:+380730000000';
+};
 
   return (
     <ModalBlock>
@@ -79,7 +81,7 @@ export default function CarDetails({ car, city, country }) {
               Price: <span>{car.rentalPrice}</span>
             </RentalItem>
           </RentalList>
-          <RentButton href={`tel:${phoneNumber}`}>Rental car</RentButton>
+          <RentButton onClick={handlePhoneCall}>Rental car</RentButton>
         </RentalBlock>
       </>
     </ModalBlock>
