@@ -94,6 +94,7 @@ export const FavoriteButton = styled.button`
     width: 18px;
     border: none;
     background-color: inherit;
+    cursor: pointer;
 `;
 
 export const DisableFavoriteButton = styled.div`
