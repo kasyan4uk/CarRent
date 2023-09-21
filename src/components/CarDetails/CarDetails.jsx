@@ -25,6 +25,8 @@ export default function CarDetails({ car, city, country }) {
   const firstConditionLine  = rentalConditionsSplit [0];
   const extractedNumber  = parseInt(firstConditionLine .match(/\d+/)[0], 10);
 
+  const phoneNumber = "+380730000000";
+
   return (
     <ModalBlock>
       <CarImg src={car.img} alt={car.make} />
@@ -77,7 +79,7 @@ export default function CarDetails({ car, city, country }) {
               Price: <span>{car.rentalPrice}</span>
             </RentalItem>
           </RentalList>
-          <RentButton href="tel:+380730000000">Rental car</RentButton>
+          <RentButton href={`tel:${phoneNumber}`}>Rental car</RentButton>
         </RentalBlock>
       </>
     </ModalBlock>
