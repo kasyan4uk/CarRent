@@ -16,11 +16,8 @@ import {
     CarButton,
     FavoriteButton,
     DisableFavoriteButton,
-    ActiveFavoriteButton
+    ActiveFavoriteButton,
 } from "./CarCard.styled";
-
-
-
 
 function CarCard({ car }) {
     

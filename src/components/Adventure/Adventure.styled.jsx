@@ -42,6 +42,9 @@ export const AdventureCard = styled.div`
     padding-top: 30px;
     background-color: #F7F7F7;
     filter: drop-shadow(4px 4px 4px #FF4D00);
+    &:hover {
+        filter: drop-shadow(7px 7px 7px #FF4D00);
+    }
 
 `;
 

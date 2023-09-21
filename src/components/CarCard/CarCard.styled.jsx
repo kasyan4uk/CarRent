@@ -2,10 +2,14 @@ import styled from "styled-components";
 import FavoriteDisable from "../../img/normal.svg";
 import FavoriteActive from "../../img/active.svg";
 
+
 export const CarBlock = styled.div`
     position: relative;
     width: 274px;
     height: 426px;
+    &:hover {
+        transform: scale3d(1.016, 1.016, 1);
+    }
 `;
 
 export const CarImg = styled.img`
