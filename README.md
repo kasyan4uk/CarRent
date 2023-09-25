@@ -12,5 +12,4 @@ You can access the live _demo_ of the application
 - React
 - React Router
 - Redux Axios
-- Tailwind
 - MockAPI for data
