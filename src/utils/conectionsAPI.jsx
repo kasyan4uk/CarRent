@@ -6,9 +6,9 @@ async function getAllCars() {
     try {
           const url = `${BASE_URL}`;
           const response = await axios.get(url);
-  
+          
           return response.data;
-  
+
       } catch (error) {
           alert('Oops, we have a problem');
       } 
